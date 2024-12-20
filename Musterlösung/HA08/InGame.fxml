@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" spacing="5.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" spacing="10.0">
+         <children>
+            <Button fx:id="leaveButton" mnemonicParsing="false" text="Leave" />
+            <Label fx:id="dungeonNameLabel" text="Chamber of R'leyh" />
+            <Label text=": Battle" />
+            <Label fx:id="currentRoundLabel" text="2" />
+            <Label text="/" />
+            <Label fx:id="maxRoundLabel" text="5" />
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </HBox>
+      <VBox fx:id="heroStatBox" alignment="CENTER_RIGHT" spacing="5.0">
+
+      </VBox>
+      <HBox prefHeight="190.0" prefWidth="1280.0" />
+      <HBox alignment="CENTER">
+         <children>
+            <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="100.0" />
+            <HBox fx:id="enemyBox" alignment="CENTER" prefWidth="1280.0">
+
+            </HBox>
+         </children>
+      </HBox>
+      <VBox fx:id="heroBox" alignment="CENTER_RIGHT" prefHeight="267.0" prefWidth="1280.0">
+
+      </VBox>
+   </children>
+</VBox>

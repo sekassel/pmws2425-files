@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+    <children>
+        <HBox alignment="CENTER" spacing="3.0">
+            <children>
+                <Label fx:id="heroNameLabel" text="Sir Slayalot"/>
+                <Label fx:id="heroModeLabel" text="(Normal)"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="3.0">
+            <children>
+                <Label text="LP:"/>
+                <Label fx:id="lpLabel" text="60"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="3.0">
+            <children>
+                <Label text="Atk: Lv"/>
+                <Label fx:id="atkLevelLabel" text="6"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="3.0">
+            <children>
+                <Label text="Def: Lv"/>
+                <Label fx:id="defLevelLabel" text="60"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" spacing="3.0">
+            <children>
+                <Label text="Coins:"/>
+                <Label fx:id="coinsLabel" text="200"/>
+            </children>
+        </HBox>
+        <Button fx:id="startButton" mnemonicParsing="false" text="Start"/>
+    </children>
+</HBox>

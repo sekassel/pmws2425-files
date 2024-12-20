@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml" alignment="CENTER_RIGHT" spacing="5.0">
+    <children>
+        <Label fx:id="heroStatTypeLabel" text="Attack"/>
+        <Label text="Lv. "/>
+        <Label fx:id="heroStatLevelLabel" text="3"/>
+        <Label text="Value:"/>
+        <Label fx:id="heroStatValueLabel" text="15"/>
+        <Label text="Coins:"/>
+        <Label fx:id="heroStatCostLabel" text="15"/>
+        <Button fx:id="lvlUpButton" mnemonicParsing="false" text="Lvl up"/>
+    </children>
+    <padding>
+        <Insets right="5.0"/>
+    </padding>
+</HBox>
