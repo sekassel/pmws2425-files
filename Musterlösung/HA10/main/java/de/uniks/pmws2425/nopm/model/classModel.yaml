@@ -1,0 +1,120 @@
+- c: 	org.fulib.classmodel.ClassModel
+  classes: 	user 	message 	topic
+  defaultCollectionType: 	c1
+  defaultPropertyStyle: 	Bean
+  defaultRoleType: 	"java.util.ArrayList<%s>"
+  mainJavaDir: 	"src/main/java"
+  packageName: 	de.uniks.pmws2425.nopm.model
+  packageSrcFolder: 	"src/main/java/de/uniks/pmws2425/nopm/model"
+
+- user: 	org.fulib.classmodel.Clazz
+  attributes: 	user_nickname
+  model: 	c
+  modified: 	false
+  name: 	User
+  propertyStyle: 	Bean
+  roles: 	user_messages
+
+- message: 	org.fulib.classmodel.Clazz
+  attributes: 	message_body 	message_timestamp
+  model: 	c
+  modified: 	false
+  name: 	Message
+  propertyStyle: 	Bean
+  roles: 	message_sender 	message_topic
+
+- topic: 	org.fulib.classmodel.Clazz
+  attributes: 	topic_title
+  model: 	c
+  modified: 	false
+  name: 	Topic
+  propertyStyle: 	Bean
+  roles: 	topic_messages
+
+- c1: 	org.fulib.classmodel.CollectionType
+  implClass: 	class java.util.ArrayList
+  implTemplate: 	"java.util.ArrayList<%s>"
+  itf: 	org.fulib.classmodel.CollectionInterface.List
+  qualifiedImplName: 	java.util.ArrayList
+  simpleImplName: 	ArrayList
+
+- user_nickname: 	org.fulib.classmodel.Attribute
+  clazz: 	user
+  id: 	User_nickname
+  modified: 	false
+  name: 	nickname
+  propertyStyle: 	Bean
+  type: 	String
+  typeSignature: 	String
+
+- user_messages: 	org.fulib.classmodel.AssocRole
+  aggregation: 	false
+  cardinality: 	42
+  clazz: 	user
+  collectionType: 	c1
+  id: 	User_messages
+  modified: 	false
+  name: 	messages
+  other: 	message_sender
+  propertyStyle: 	Bean
+  roleType: 	"java.util.ArrayList<%s>"
+
+- message_body: 	org.fulib.classmodel.Attribute
+  clazz: 	message
+  id: 	Message_body
+  modified: 	false
+  name: 	body
+  propertyStyle: 	Bean
+  type: 	String
+  typeSignature: 	String
+
+- message_timestamp: 	org.fulib.classmodel.Attribute
+  clazz: 	message
+  id: 	Message_timestamp
+  modified: 	false
+  name: 	timestamp
+  propertyStyle: 	Bean
+  type: 	"import(java.time.Instant)"
+  typeSignature: 	Instant
+
+- message_sender: 	org.fulib.classmodel.AssocRole
+  aggregation: 	false
+  cardinality: 	1
+  clazz: 	message
+  id: 	Message_sender
+  modified: 	false
+  name: 	sender
+  other: 	user_messages
+  propertyStyle: 	Bean
+
+- message_topic: 	org.fulib.classmodel.AssocRole
+  aggregation: 	false
+  cardinality: 	1
+  clazz: 	message
+  id: 	Message_topic
+  modified: 	false
+  name: 	topic
+  other: 	topic_messages
+  propertyStyle: 	Bean
+
+- topic_title: 	org.fulib.classmodel.Attribute
+  clazz: 	topic
+  id: 	Topic_title
+  modified: 	false
+  name: 	title
+  propertyStyle: 	Bean
+  type: 	String
+  typeSignature: 	String
+
+- topic_messages: 	org.fulib.classmodel.AssocRole
+  aggregation: 	false
+  cardinality: 	42
+  clazz: 	topic
+  collectionType: 	c1
+  id: 	Topic_messages
+  modified: 	false
+  name: 	messages
+  other: 	message_topic
+  propertyStyle: 	Bean
+  roleType: 	"java.util.ArrayList<%s>"
+

@@ -1,0 +1,46 @@
+<svg width="230px" height="165px"
+ viewBox="0.00 0.00 229.50 165.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1.0 1.0) rotate(0.0) translate(4.0 161.0)">
+<title>de.uniks.pmws2425.nopm.model</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-161 225.5,-161 225.5,4 -4,4"/>
+<!-- Message -->
+<g id="node1" class="node">
+<title>Message</title>
+<polygon fill="none" stroke="black" points="48.5,-42.5 48.5,-64.5 157.5,-64.5 157.5,-42.5 48.5,-42.5"/>
+<text text-anchor="start" x="78.51" y="-48.9" font-family="Times,serif" font-size="14.00">Message</text>
+<polygon fill="none" stroke="black" points="48.5,-3.5 48.5,-42.5 157.5,-42.5 157.5,-3.5 48.5,-3.5"/>
+<text text-anchor="start" x="51.5" y="-26.9" font-family="Times,serif" font-size="14.00">body :String</text>
+<text text-anchor="start" x="51.5" y="-10.1" font-family="Times,serif" font-size="14.00">timestamp :Instant</text>
+</g>
+<!-- Topic -->
+<g id="node2" class="node">
+<title>Topic</title>
+<polygon fill="none" stroke="black" points="8.5,-131 8.5,-153 77.5,-153 77.5,-131 8.5,-131"/>
+<text text-anchor="start" x="26.67" y="-137.4" font-family="Times,serif" font-size="14.00">Topic</text>
+<polygon fill="none" stroke="black" points="8.5,-109 8.5,-131 77.5,-131 77.5,-109 8.5,-109"/>
+<text text-anchor="start" x="11.5" y="-115.4" font-family="Times,serif" font-size="14.00">title :String</text>
+</g>
+<!-- Message&#45;&gt;Topic -->
+<g id="edge1" class="edge">
+<title>Message&#45;&gt;Topic</title>
+<path fill="none" stroke="black" d="M81.18,-69.08C73.7,-80.86 65.44,-93.88 58.47,-104.84"/>
+<text text-anchor="middle" x="44.47" y="-92.24" font-family="Times,serif" font-size="14.00">topic</text>
+<text text-anchor="middle" x="49.49" y="-73.28" font-family="Times,serif" font-size="14.00">messages *</text>
+</g>
+<!-- User -->
+<g id="node3" class="node">
+<title>User</title>
+<polygon fill="none" stroke="black" points="111.5,-131 111.5,-153 213.5,-153 213.5,-131 111.5,-131"/>
+<text text-anchor="start" x="149.29" y="-137.4" font-family="Times,serif" font-size="14.00">User</text>
+<polygon fill="none" stroke="black" points="111.5,-109 111.5,-131 213.5,-131 213.5,-109 111.5,-109"/>
+<text text-anchor="start" x="114.5" y="-115.4" font-family="Times,serif" font-size="14.00">nickname :String</text>
+</g>
+<!-- Message&#45;&gt;User -->
+<g id="edge2" class="edge">
+<title>Message&#45;&gt;User</title>
+<path fill="none" stroke="black" d="M123.82,-69.08C131.3,-80.86 139.56,-93.88 146.53,-104.84"/>
+<text text-anchor="middle" x="128.26" y="-92.24" font-family="Times,serif" font-size="14.00">sender</text>
+<text text-anchor="middle" x="155.51" y="-73.28" font-family="Times,serif" font-size="14.00">messages *</text>
+</g>
+</g>
+</svg>

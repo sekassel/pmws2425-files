@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="messageBubble" alignment="CENTER_RIGHT" xmlns="http://javafx.com/javafx/20.0.1"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.pmws2425.nopm.controller.MessageController"
+      style="-fx-background-color: lightblue; -fx-background-radius: 15; -fx-padding: 10; -fx-border-color: gray; -fx-border-radius: 15;">
+    <children>
+        <Label fx:id="bodyText" text="Das ist eine Beispielnachricht die ausgetauscht gehört!"
+               wrapText="true">
+            <padding>
+                <Insets bottom="3.0" left="9.0" right="9.0" top="3.0"/>
+            </padding>
+        </Label>
+        <Label fx:id="infoText" text="TIMESTAMP">
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+            <padding>
+                <Insets left="9.0" right="9.0"/>
+            </padding>
+        </Label>
+    </children>
+    <padding>
+        <Insets bottom="3.0" top="3.0"/>
+    </padding>
+</VBox>

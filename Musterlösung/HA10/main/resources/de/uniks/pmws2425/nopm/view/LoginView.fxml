@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="250.0" prefWidth="350.0" spacing="10.0" xmlns="http://javafx.com/javafx/22"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.uniks.pmws2425.nopm.controller.LoginController">
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NoPM" wrappingWidth="105.50390243530273">
+            <font>
+                <Font size="36.0"/>
+            </font>
+        </Text>
+        <Text fill="#534d4d" strokeType="OUTSIDE" strokeWidth="0.0" text="No Private Messages for you!"
+              textAlignment="CENTER"/>
+        <Label text="Nickname:" textAlignment="CENTER"/>
+        <TextField fx:id="nicknameField" prefHeight="25.0" prefWidth="100.0" promptText="Enter your name">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <VBox.margin>
+                <Insets left="50.0" right="50.0"/>
+            </VBox.margin>
+        </TextField>
+        <Button fx:id="loginButton" mnemonicParsing="false" text="Login"/>
+    </children>
+</VBox>
